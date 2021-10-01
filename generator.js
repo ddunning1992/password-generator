@@ -1,6 +1,4 @@
 // Assignment code here
-var symbols = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
 var getPasswordLength = function() {
   var length = "";
 
