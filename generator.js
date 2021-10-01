@@ -10,9 +10,9 @@ var getPasswordLength = function() {
 
  var useLowerCase = function() {
   var charset1 = "";
-  var lCase = prompt("Would you like to use lowercase letters? Type 'true' or 'false'.");
+  var lowerCase = prompt("Would you like to use lowercase letters? Type 'true' or 'false'.");
   
-    if (lCase === "true") {
+    if (lowerCase === "true") {
         charset1 = "abcdefghijklmnopqrstuvwxyz";
     }
     return charset1;
@@ -20,9 +20,9 @@ var getPasswordLength = function() {
 
 var useUpperCase = function() {
   var charset2 = "";
-  var uCase = prompt("Would you like to use uppercase letters? Type 'true' or 'false'.");
+  var upperCase = prompt("Would you like to use uppercase letters? Type 'true' or 'false'.");
 
-  if (uCase === "true") {
+  if (upperCase === "true") {
       charset2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
   return charset2;
@@ -57,11 +57,6 @@ function generatePassword() {
   }
   return retVal;
 };
-
-var finalCharset = function () {
-
-}
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
