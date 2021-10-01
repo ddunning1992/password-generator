@@ -1,4 +1,4 @@
-// Assignment code here
+// determine password length
 var getPasswordLength = function() {
   var length = "";
 
@@ -8,6 +8,7 @@ var getPasswordLength = function() {
   return length;
 };
 
+// determine if lowercase characters should be used
  var useLowerCase = function() {
   var charset1 = "";
   var lowerCase = prompt("Would you like to use lowercase letters? Type 'true' or 'false'.");
@@ -18,6 +19,7 @@ var getPasswordLength = function() {
     return charset1;
 };
 
+// determine if uppercase characters should be used
 var useUpperCase = function() {
   var charset2 = "";
   var upperCase = prompt("Would you like to use uppercase letters? Type 'true' or 'false'.");
@@ -28,6 +30,7 @@ var useUpperCase = function() {
   return charset2;
 };
 
+// determine if numbers should be used
 var useNumbers = function() {
   var charset3 = "";
   var numbers = prompt("Would you like to use numbers? Type 'true' or 'false'.");
@@ -38,6 +41,7 @@ var useNumbers = function() {
   return charset3;
 };
 
+//determine if special characters should be used
 var useSpecialCharacters = function() {
   var charset4 = "";
   var characters = prompt("Would you like to use special characters? Type 'true' or 'false'.");
@@ -48,6 +52,7 @@ var useSpecialCharacters = function() {
   return charset4;
 };
 
+//generates password based on user input
 function generatePassword() {
   var length = getPasswordLength();
       charset = useLowerCase() + useUpperCase() + useNumbers() + useSpecialCharacters();
