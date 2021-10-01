@@ -3,9 +3,8 @@ var getPasswordLength = function() {
   var length = "";
 
   while (length === "" || length === null) {
-    length = prompt("Enter the length for your password between 8 and 128 characters.");
+        length = prompt("Enter the length for your password between 8 and 128 characters.");
   }
-
   return length;
 };
 
@@ -13,16 +12,11 @@ var useUpperCase = function() {
   var charset = "";
 
   var uCasePrompt = window.prompt("Would you like to use uppercase letters? type 'true' or 'false'.");
-  
 
   if (uCasePrompt === true) {
-    charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    return charset;
-  };
-  if (uCasePrompt === false) {
-    charset = "";
-    return charset;
+      charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
+  return charset;
 };
 
 function generatePassword() {
